@@ -1,61 +1,79 @@
+# Node.js CRUD Application with Prisma and MongoDB
 
-### Installing
-
-A step by step series of examples that tell you how to get a development environment running.
-
-Say what the step will be:
-# Project Title
-
-A brief description of what this project does and who it's for.
+This project is a CRUD (Create, Read, Update, Delete) application built using Node.js, Prisma, and MongoDB. It demonstrates the basic functionalities of a web application, allowing users to interact with a database through a simple and intuitive interface. The use of Prisma as an ORM (Object-Relational Mapping) tool simplifies database operations, making the codebase more maintainable and scalable.
 
 ## Getting Started
 
+These instructions will guide you through setting up the project locally. By following these steps, you'll have a running version of the application on your machine for development and testing purposes.
+
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Before you begin, ensure you have the following installed:
+- Node.js (v12.x or later)
+- npm (v6.x or later)
+- MongoDB (Follow the MongoDB installation guide for your OS)
 
-## Usage
+### Installing
 
-How to use this project.
+1. **Clone the repository:**
 
-## Running the Tests
+```bash
+git clone https://github.com/ardhrubo/prisma-mongo.git
+ ```
 
-Explain how to run the automated tests for this system.
+2. **Navigate to the project directory:**
 
-### Break down into end to end tests
+```bash
+cd node-prisma-mongodb-crud
+ ```
 
-Explain what these tests test and why.
+3. **Install dependencies:**
 
-## Deployment
+```bash
+npm install
+```
 
-Add additional notes about how to deploy this on a live system.
+4. **Generate Prisma client:**
 
-## Built With
+```bash
+npx prisma generate
+```
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+5. **Run the Prisma migrations (optional):**
 
-## Contributing
+```bash
+npx prisma migrate dev
+```
 
-Please read [CONTRIBUTING.md](https://github.com/your/project/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
+6. **Start the application:**
 
-## Versioning
+```bash
+npm start
+```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+### The application should now be running on http://localhost:3000.
 
-## Authors
+# Built With
+Node.js - The runtime environment
+Prisma - Next-generation ORM for Node.js and TypeScript
+MongoDB - The database used
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-* **Your Name** - *Initial work* - [YourGitHub](https://github.com/YourGitHub)
+# Versioning
+We use SemVer for versioning. For the versions available, see the tags on this repository.
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+# Authors
+Your Name - Initial work - YourGitHub
+See also the list of contributors who participated in this project.
 
-## License
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+# Acknowledgments
 
-## Acknowledgments
+We used Mongodb, Prisma documentation for reference code.
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+
+
+
